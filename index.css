@@ -1264,7 +1264,7 @@ body {
 }
 .telegram-tekst {
     display: flex;
-    text-align: start;
+    text-align: end;
     padding-left: 15px;
     gap: 10px;
     font-size: 18px;
