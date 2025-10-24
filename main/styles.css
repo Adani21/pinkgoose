@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* === GENERAL STYLES === */
+
 body {
     font-family: 'Fredoka', sans-serif;
     background-color: #0a1117;
@@ -6,28 +10,29 @@ body {
 
 html,
 body {
+    margin: 0;
     overflow-x: hidden;
 }
 
+/* === NAVIGATION BAR === */
 
 .navigatie-balk {
     display: flex;
     justify-content: space-between;
+    align-items: center;    
+    margin-top: 20px;
 }
 
 .navigatie-lijsten {
+    gap: 50px;
     display: flex;
     list-style: none;
-    margin-top: 25px;
 }
 
 .navigatie-lijsten a {
     text-decoration: none;
     font-size: 17px;
     color: #fff;
-    margin: 10px;
-    padding: 0;
-    margin-right: 40px;
     transition: color 300ms ease-in-out;
 }
 
@@ -37,12 +42,12 @@ body {
     border-radius: 5px;
 }
 
+/* Logo styling */
 .logo {
     font-family: sans-serif;
     font-size: 2rem;
+    margin-bottom: 10px;
     font-weight: bolder;
-    padding: 0;
-    margin: 15px 30px;
     margin-left: 220px;
 }
 
@@ -50,24 +55,25 @@ body {
     color: #ffb4d3;
 }
 
+/* Login button */
 .log-btn {
-    background-color: #16213e;
+    background-color: #243241;
     color: #fff;
     letter-spacing: 1px;
-    margin-bottom: 27px;
-    margin-top: 17px;
-    margin-right: 380px;
     border-radius: 10px;
+    margin-right: 330px;
     border: none;
     padding: 10px;
-    width: 70px;
+    width: 70px;    
+    transition: all 0.3s ease-in-out;
 }
 
 .log-btn:hover {
     background-color: #ffb4d3;
     color: black;
-    transition: all 0.3s ease;
 }
+
+/* === HERO SECTION === */
 
 .alles {
     display: flex;
@@ -80,10 +86,11 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding-top: 100px;
-    width: 1000px;
+    margin-top: 100px;
+    width: 100%;
 }
 
+/* Main title */
 .titel-tekst {
     font-family: sans-serif;
     font-size: 50px;
@@ -91,6 +98,7 @@ body {
     width: 400px;
 }
 
+/* Subtitle text */
 .tekst-p {
     color: #fff;
     font-size: 20px;
@@ -98,6 +106,7 @@ body {
     width: 400px;
 }
 
+/* Call-to-action button */
 .knop-actie {
     display: flex;
     align-items: center;
@@ -121,6 +130,7 @@ body {
     transform: scale(1.1);
 }
 
+/* Down arrow icon */
 .arrow-down {
     width: 20px;
     height: auto;
@@ -128,9 +138,12 @@ body {
     margin-top: 60px;
 }
 
+/* === SUBTITLE SECTION === */
+
 .subtitel-wrapper {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .subtitel-tekst {
@@ -138,7 +151,7 @@ body {
     font-size: 35px;
     font-family: sans-serif;
     font-weight: bolder;
-    margin-right: 200px;
+    margin-right: 175px;
     align-self: flex-end;
 }
 
@@ -148,6 +161,9 @@ body {
     margin-bottom: 2px;
 }
 
+/* === DAO CATEGORY BUTTONS === */
+
+/* First row of DAO buttons */
 .dao-rij {
     display: flex;
     justify-content: center;
@@ -156,7 +172,6 @@ body {
     flex-wrap: wrap;
     border: none;
     height: 50px;
-
     margin-top: 20px;
 }
 
@@ -179,6 +194,7 @@ body {
     transform: scale(1.1);
 }
 
+/* Second row of DAO buttons */
 .dao-rij-2 {
     display: flex;
     justify-content: center;
@@ -187,7 +203,6 @@ body {
     font-family: 'Fredoka', sans-serif;
     flex-wrap: wrap;
     border: none;
-
     margin-top: 9px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -210,11 +225,11 @@ body {
     transform: scale(1.1);
 }
 
+/* DAO category color classes */
 .defi {
     width: 100px;
     color: #ff9e9e;
 }
-
 
 .impact {
     width: 120px;
@@ -243,6 +258,7 @@ body {
     color: #77e6ff;
 }
 
+/* === IMAGE SECTION === */
 
 .afbeelding-sectie {
     display: flex;
@@ -260,6 +276,7 @@ body {
     height: 350px;
 }
 
+/* Image caption overlay */
 .afbeelding-bijschrift {
     display: flex;
     text-align: center;
@@ -276,6 +293,8 @@ body {
     box-shadow: magenta 0px 0px 20px;
 }
 
+/* === DESCRIPTIVE TEXT SECTIONS === */
+
 .beschrijving-boven {
     font-family: sans-serif;
     display: flex;
@@ -286,7 +305,6 @@ body {
     font-weight: bold;
 }
 
-
 .stars2 {
     margin-left: 40px;
     width: 90px;
@@ -296,6 +314,7 @@ body {
     margin-left: 150px;
 }
 
+/* Text labels for different sections */
 .organisation {
     font-family: sans-serif;
     display: flex;
@@ -383,13 +402,14 @@ body {
     margin-left: 20px;
 }
 
+/* === PARTNERS SECTION === */
+
 .sectie-partners {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 100px;
-
 }
 
 .starz1 {
@@ -417,6 +437,7 @@ body {
     flex-direction: row;
 }
 
+/* Container for partner logos */
 .werk-img {
     display: flex;
     justify-content: center;
@@ -434,6 +455,9 @@ body {
     gap: 20px;
 }
 
+/* === CRYPTO PARTNER LOGOS === */
+
+/* Ethereum logo container */
 .eth-img {
     border-radius: 30px;
     border: #283444 2px solid;
@@ -446,7 +470,72 @@ body {
     margin-bottom: 30px;
 }
 
+/* Polygon logo container */
+.pol-img {
+    border-radius: 30px;
+    border: #283444 2px solid;
+    height: 120px;
+    width: 120px;
+    background-color: #182632;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
 
+/* Gnosis logo container */
+.gno-img {
+    border-radius: 30px;
+    border: #283444 2px solid;
+    height: 120px;
+    width: 120px;
+    background-color: #182632;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Snapshot logo container */
+.snap-img {
+    border-radius: 30px;
+    border: #283444 2px solid;
+    height: 120px;
+    width: 120px;
+    background-color: #182632;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* ENS logo container */
+.ens-img {
+    border-radius: 30px;
+    border: #283444 2px solid;
+    height: 120px;
+    width: 120px;
+    background-color: #182632;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* OpenSea logo container */
+.open-img {
+    border-radius: 30px;
+    border: #283444 2px solid;
+    height: 120px;
+    width: 120px;
+    background-color: #182632;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Alternative logo containers */
 .matic {
     border-radius: 30px;
     border: #283444 2px solid;
@@ -478,18 +567,6 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
-}
-
-.ens {
-    border-radius: 30px;
-    border: #283444 2px solid;
-    height: 120px;
-    width: 120px;
-    background-color: #182632;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .open-sea {
@@ -503,7 +580,10 @@ body {
     flex-direction: column;
 }
 
-.eth2 {
+/* === PARTNER LOGO IMAGES === */
+
+/* Ethereum logo with glow */
+.eth-img2 {
     width: 50px;
     height: auto;
     align-self: center;
@@ -511,7 +591,8 @@ body {
     border-radius: 50px;
 }
 
-.eth3 {
+/* Polygon logo with glow */
+.pol-img2 {
     width: 60px;
     height: auto;
     align-self: center;
@@ -519,7 +600,8 @@ body {
     border-radius: 50px;
 }
 
-.eth4 {
+/* Gnosis logo with glow */
+.gno-img2 {
     width: 60px;
     height: auto;
     align-self: center;
@@ -527,7 +609,8 @@ body {
     border-radius: 50px;
 }
 
-.eth5 {
+/* Snapshot logo with glow */
+.snap-img2 {
     width: 60px;
     height: auto;
     box-shadow: 0 0 20px #FFAC32;
@@ -535,7 +618,8 @@ body {
     border-radius: 50px;
 }
 
-.eth6 {
+/* ENS logo with glow */
+.ens-img2 {
     width: 60px;
     height: auto;
     box-shadow: 0 0 20px #4ACEF7;
@@ -543,13 +627,16 @@ body {
     align-self: center;
 }
 
-.eth7 {
+/* OpenSea logo with glow */
+.open-img2 {
     width: 60px;
     height: auto;
     box-shadow: 0 0 20px #2081E2;
     border-radius: 50px;
     align-self: center;
 }
+
+/* === HELP SECTION === */
 
 .tesktc {
     font-family: 'Montserrat', sans-serif;
@@ -558,6 +645,7 @@ body {
     justify-content: center;
 }
 
+/* Help section title */
 .help {
     font-size: 35px;
     font-weight: bolder;
@@ -567,6 +655,7 @@ body {
     align-items: center;
 }
 
+/* Team member images container */
 .help-img {
     margin-top: 40px;
     display: flex;
@@ -575,41 +664,57 @@ body {
     gap: 25px;
 }
 
+/* Team member profile images */
 .team1 {
     border-radius: 25%;
     object-fit: cover;
+    height: 120px;
+    width: 120px;
 }
 
 .team2 {
     border-radius: 25%;
     object-fit: cover;
+    height: 120px;
+    width: 120px;
 }
 
 .team3 {
     border-radius: 25%;
     object-fit: cover;
+    height: 120px;
+    width: 120px;
 }
 
 .team4 {
     border-radius: 25%;
     object-fit: cover;
+    height: 120px;
+    width: 120px;
 }
 
 .team5 {
     border-radius: 25%;
     object-fit: cover;
+    height: 120px;
+    width: 120px;
 }
 
-.help-text {
+/* Help text container */
+.help-tekst {
     margin-top: 20px;
 }
 
+/* === HELP TEXT LINES === */
+
+/* First line of help text */
 .zin1 {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
+/* Second line of help text */
 .zin2 {
     display: flex;
     gap: 10px;
@@ -617,7 +722,7 @@ body {
     margin-top: -25px;
 }
 
-
+/* Third line of help text */
 .zin3 {
     display: flex;
     gap: 10px;
@@ -625,6 +730,7 @@ body {
     margin-top: -25px;
 }
 
+/* Fourth line of help text */
 .zin4 {
     display: flex;
     gap: 10px;
@@ -632,6 +738,7 @@ body {
     margin-top: -25px;
 }
 
+/* Help text keyword styles */
 .suc {
     font-size: 24px;
     font-weight: bolder;
@@ -677,6 +784,7 @@ body {
     font-weight: bolder;
 }
 
+/* Star decorations in different colors */
 .starcy {
     width: 32px;
     height: 32px;
@@ -707,48 +815,73 @@ body {
     margin-top: 25px;
 }
 
+/* === NEWSLETTER SIGNUP === */
+
+/* Weekly newsletter container */
 .weekelijks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 900px;
     height: 300px;
     background-color: #121E28;
-    border-radius: 30px;
+    border-radius: 23px;
     font-size: 20px;
     border: 2px #2A3744 solid;
-    margin-top: 120px;
+    margin-top: 200px;
 }
 
-.w-title {
+/* Newsletter title */
+.w-titel {
     font-size: 32px;
+    height: 2px;
     color: #ffff;
     font-weight: bolder;
     font-family: 'montserrat', sans-serif;
 }
 
+/* Newsletter subtitle */
 .w-sub {
     font-size: 25px;
+    height: 1px;
     color: #9AAFC3;
     font-weight: bolder;
     font-weight: bolder;
     font-family: 'montserrat', sans-serif;
 }
 
+/* Email input container */
 .input {
     margin-top: 60px;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Email input field */
 .email-in {
     border-radius: 10px;
     width: 300px;
-    height: 40px;
-    background-color: #10151A;
+    height: 44px;
+    background-color: #121E28;
     padding-left: 10px;
-    color: #ffff;
+    border: 2px #2a3745 solid;
+    color: #fff;
 }
 
+.email-in::placeholder {
+    color: #44515f;
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+}
+
+/* Subscribe button */
 .sub {
     background-color: #ceaaff;
     border: none;
-    margin-top: 10px;
     width: 130px;
     height: 45px;
     border-radius: 10px;
@@ -764,6 +897,9 @@ body {
     transform: scale(1.1);
 }
 
+/* === PRESS SECTION === */
+
+/* Press section header */
 .blokken-titel {
     width: 900px;
     display: flex;
@@ -793,12 +929,13 @@ body {
     cursor: pointer;
 }
 
-.yellow-purple-star {
+.yellow-blue-star {
     width: 40px;
     height: 40px;
     margin-top: -60px;
 }
 
+/* Press cards container */
 .blokken {
     display: flex;
     justify-content: center;
@@ -808,26 +945,33 @@ body {
     width: 900px;
 }
 
+/* === PRESS CARDS === */
+
+/* Decrypt press card */
 .decryptblok {
     border-radius: 20px;
     background-color: #77E6FF;
     box-sizing: border-box;
     width: 361px;
-    height: 350px;
+    height: 330px;
 }
 
 .decrypt-img {
     display: flex;
-    padding-top: 15px;
-    padding-left: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.decrypt-img img {
+    width: 130px;
 }
 
 .decrypt-titel {
     display: flex;
     text-align: start;
-    padding-left: 15px;
+    margin-left: 15px;
     gap: 10px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'montserrat', sans-serif;
     color: #10151A;
 }
@@ -835,13 +979,14 @@ body {
 .decrypt-tekst {
     display: flex;
     text-align: start;
-    padding-left: 15px;
-    padding-right: 15px;
-    gap: 10px;
-    font-size: 1.1rem;
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 250px;
+    line-height: 23px;
+    font-size: 1rem;
     font-family: 'montserrat', sans-serif;
-    color: #10151A;
-    font-weight: lighter;
+    color: #3a3847;
+    font-weight: bolder;
 }
 
 .read1 {
@@ -854,21 +999,21 @@ body {
     color: #10151A;
     font-weight: bolder;
     cursor: pointer;
-    margin-top: 47px;
 }
 
+/* Blockworks press card */
 .blockworks-blok {
     border-radius: 20px;
     background-color: #E2C1F9;
     box-sizing: border-box;
     width: 361px;
-    height: 350px;
+    height: 330px;
 }
 
 .blockworks-img {
     display: flex;
-    padding-top: 15px;
-    padding-left: 15px;
+    margin-top: 30px;
+    margin-left: 15px;
     height: 22.3px;
     width: 140px;
 }
@@ -876,9 +1021,11 @@ body {
 .blockworks-titel {
     display: flex;
     text-align: start;
-    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 23px;
     gap: 10px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    width: 220px;
     font-family: 'montserrat', sans-serif;
     color: #10151A;
 }
@@ -886,13 +1033,13 @@ body {
 .blockworks-tekst {
     display: flex;
     text-align: start;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 15px;
+    margin-top: -4.7px;
     gap: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'montserrat', sans-serif;
-    color: #10151A;
-    font-weight: lighter;
+    color: #3a3847;
+    font-weight: bolder;
 }
 
 .read2 {
@@ -905,20 +1052,22 @@ body {
     color: #10151A;
     font-weight: bolder;
     cursor: pointer;
+    margin-top: -5px;
 }
 
+/* TechCrunch press card */
 .techcrunch-blok {
     border-radius: 20px;
     background-color: #DBE268;
     box-sizing: border-box;
     width: 361px;
-    height: 350px;
+    height: 330px;
 }
 
 .techcrunch-img {
     display: flex;
-    padding-top: 15px;
-    padding-left: 15px;
+    margin-top: 30px;
+    margin-left: 15px;
     height: 22.3px;
     width: 140px;
 }
@@ -926,9 +1075,10 @@ body {
 .techcrunch-titel {
     display: flex;
     text-align: start;
-    padding-left: 15px;
+    margin-left: 15px;
     gap: 10px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    width: 270px;
     font-family: 'montserrat', sans-serif;
     color: #10151A;
 }
@@ -936,13 +1086,15 @@ body {
 .techcrunch-tekst {
     display: flex;
     text-align: start;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 15px;
+    margin-top: 35px;
+    line-height: 23px;
+    width: 270px;
     gap: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'montserrat', sans-serif;
-    color: #10151A;
-    font-weight: lighter;
+    color: #393e2b;
+    font-weight: bold;
 }
 
 .read3 {
@@ -955,26 +1107,24 @@ body {
     color: #10151A;
     font-weight: bolder;
     cursor: pointer;
-    margin-top: 40px;
 }
 
+/* === PODCAST SECTION === */
 
-
-
-
-
+/* Podcast section header */
 .blokken-titel2 {
-    width: 900px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 688px;
     margin-top: 150px;
 }
 
 .podcast-titel {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .podcast {
@@ -990,8 +1140,10 @@ body {
     font-weight: bolder;
     font-family: 'montserrat', sans-serif;
     cursor: pointer;
+    margin-right: 62px;
 }
 
+/* Podcast cards container */
 .blokken2 {
     display: flex;
     justify-content: center;
@@ -1001,12 +1153,15 @@ body {
     width: 900px;
 }
 
+/* === PODCAST CARDS === */
+
+/* Pomp podcast card */
 .pompblok {
     border-radius: 20px;
     background-color: #121E28;
     box-sizing: border-box;
     width: 361px;
-    height: 270px;
+    height: 290px;
     border: 2px #2A3744 solid;
 }
 
@@ -1067,16 +1222,16 @@ body {
     color: #ffff;
     font-weight: bolder;
     cursor: pointer;
-    margin-top: 36px;
-
+    margin-top: 60px;
 }
 
+/* Unstoppable podcast card */
 .unstoppableblok {
     border-radius: 20px;
     background-color: #121E28;
     box-sizing: border-box;
     width: 361px;
-    height: 270px;
+    height: 290px;
     border: 2px #2A3744 solid;
 }
 
@@ -1137,15 +1292,15 @@ body {
     color: #ffff;
     font-weight: bolder;
     cursor: pointer;
-
 }
 
+/* Zima podcast card */
 .zimablok {
     border-radius: 20px;
     background-color: #121E28;
     box-sizing: border-box;
     width: 361px;
-    height: 270px;
+    height: 290px;
     border: 2px #2A3744 solid;
 }
 
@@ -1166,6 +1321,7 @@ body {
     text-align: start;
     padding-left: 15px;
     gap: 10px;
+    width: 280px;
     font-size: 18px;
     font-family: 'montserrat', sans-serif;
     color: #ffff;
@@ -1206,13 +1362,16 @@ body {
     color: #ffff;
     font-weight: bolder;
     cursor: pointer;
-    margin-top: 44px;
+    margin-top: 67px;
 }
 
-.three-stars2{
+.three-stars2 {
     margin-top: 50px;
 }
 
+/* === COMMUNITY SECTION === */
+
+/* Community section title */
 .end-titel {
     font-size: 32px;
     display: flex;
@@ -1222,61 +1381,164 @@ body {
     align-items: center;
     margin-top: 70px;
 }
+
+/* Community section subtitle */
 .end-subtitel {
     font-size: 20px;
-    color: #5A6C7E  ;
+    color: #5A6C7E;
     font-weight: bolder;
-    font-weight: bolder;
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
 }
 
-.blokjes{
+/* Contact cards container */
+.blokjes {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     margin-top: 30px;
-    width: 900px;
+    margin-bottom: 200px;
+    width: 100%;
 }
-.telegram-blok {
-    border-radius: 20px;
-    background-color: #121E28;
-    box-sizing: border-box;
-    width: 280px;
-    height: 84px;
-    border: 2px #2A3744 solid;
+
+/* === CONTACT CARDS === */
+
+/* Telegram contact card */
+.telegram {
     display: flex;
+    background-color: #ffc803;
+    width: 250px;
+    height: 70px;
+    gap: 14px;
+    align-content: center;
     align-items: center;
-    
+    border-radius: 12px;
 }
-.telegram-img {
+
+.tele-img {
     display: flex;
-    height: 52px;
-    width: 52px;
+    background-color: #e8b404;
+    border-radius: 5px;
+    justify-items: center;
+    margin-left: 17px;
+    width: 45px;
+    height: 45px;
+}
+
+.tele-tekst {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 15px;    
+    margin-top: 3px;
+}
+
+.telegram-at {
+    color: #886404;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.telegram-tekst {
+    margin-top: 23px;
+    font-size: 17px;
+    color: #503404;
+    margin-bottom: 0;
     display: flex;
+}
+
+/* Email contact card */
+.email {
+    display: flex;
+    background-color: #e2c1f9;
+    width: 250px;
+    height: 70px;
+    gap: 14px;
+    align-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.email-img {
+    display: flex;
+    background-color: #d0ace4;
+    border-radius: 5px;
+    justify-items: center;
+    margin-left: 17px;
+    width: 45px;
+    height: 45px;
+}
+
+.email-tekst {
+    display: flex;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    flex-direction: column;
+    margin-top: 3px;
+}
+
+.email-at {
+    color: #705f7f;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.email-tekst2 {
+    margin-top: 23px;
+    font-size: 17px;
+    color: #40354b;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+/* === FOOTER === */
+
+footer {
+    display: flex;
+    margin-top: 100px;
+    height: 168px;
+    width: 100%;
+    background-color: #121e28;
     justify-content: center;
     align-items: center;
-   
 }
-.telegram-tekst {
-    display: flex;
-    text-align: start;
-    padding-left: 15px;
-    gap: 10px;
-    font-size: 18px;
-    font-family: 'montserrat', sans-serif;
-    color: #fff;
-    font-weight: bolder;
-    margin-top: 10px;
-}
-.telegram-subtekst {
-    display: flex;
-    font-size: 14px;
-    font-family: 'montserrat', sans-serif;
-    color: #8395A7;
 
+/* Footer navigation */
+.footer-navagatiebalk {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 60px;
+    margin-left: 450px;
+    font-size: 25px;
+    width: 100%;
+}
+
+.f-legal {
+    color: #ffc803;
+}
+
+/* Footer media links */
+.f-media {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 140px;
+}
+
+/* Footer about link */
+.f-about a {
+    text-decoration: none;
+    color: #fff;
+}   
+
+.f-about a:hover {  
+    color: #ffb4d3;
 }

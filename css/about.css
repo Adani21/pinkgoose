@@ -1,0 +1,133 @@
+/* Heroes section container */
+.heroes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Heroes section title */
+.heroes-tekst{
+    display: flex;
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 100px;
+}
+
+/* Container for hero profile cards */
+.heroes-boxen{
+    display: flex;
+    gap: 50px;
+    width: 900px;
+}
+
+/* Hero profile card (John/Hans) */
+.hero-john{
+    font-family: sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    height: 290px;
+    background-color: #ffb4d3;
+    border-radius: 15px;
+}
+
+/* Hero profile image (John) */
+.john-img{
+    border-radius: 40px;
+    align-self: center;
+    margin-top: 20px;
+    width: 140px;
+    height: 140px;
+}
+
+/* Hero name styling */
+.hero-naam{
+    font-size: 22px;
+    color: #10151a;
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+/* Hero job title (first profile) */
+.hero-functie1{
+    font-size: 17px;
+    color: #40343f;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* Contact link (first profile) */
+.hero-contact1{
+    display: flex;
+    text-decoration: none;
+    color: #10151a;
+    margin-left: 180px;
+    margin-top: 0px;
+}
+
+/* Hero job title (second profile) */
+.hero-functie2{
+    font-size: 17px;
+    color: #40343f;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* Contact link (second profile) */
+.hero-contact2{
+    display: flex;
+    text-decoration: none;
+    color: #10151a;
+    margin-left: 180px;
+    margin-top: 0px;
+}
+
+/* Hero job title (third profile) */
+.hero-functie3{
+    font-size: 15px;
+    color: #40343f;
+    display: flex;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* Contact link (third profile) */
+.hero-contact3{
+    display: flex;
+    text-decoration: none;
+    color: #10151a;
+    margin-left: 180px;
+    margin-top: 5px;
+}
+
+/* Hero profile card (Jane) */
+.hero-jane{
+    font-family: sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    height: 290px;
+    background-color: #ffb4d3;
+    border-radius: 15px;
+}
+
+/* Hero profile image (Jane) */
+.jane-img{
+    border-radius: 40px;
+    align-self: center;
+    margin-top: 20px;
+    width: 140px;
+    height: 140px;
+}
