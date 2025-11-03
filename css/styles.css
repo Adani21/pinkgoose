@@ -1505,8 +1505,8 @@ footer {
     height: 168px;
     width: 100%;
     background-color: #121e28;
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
 }
 
 /* Footer navigation */
